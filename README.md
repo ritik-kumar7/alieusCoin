@@ -9,7 +9,7 @@
 
 **A futuristic, neon-themed cryptocurrency landing page built with React and Vite**
 
-[Live Demo](https://aliescoin.netlify.app)
+[Live Demo](https://alieuscoin.netlify.app)
 
 </div>
 
