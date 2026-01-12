@@ -9,7 +9,7 @@
 
 **A futuristic, neon-themed cryptocurrency landing page built with React and Vite**
 
-[Live Demo](https://aliescoin.netlify.app) • [Report Bug](https://github.com/ritik-kumar7/ahf-coin/issues) • [Request Feature](https://github.com/ritik-kumar7/ahf-coin/issues)
+[Live Demo](https://aliescoin.netlify.app)
 
 </div>
 
