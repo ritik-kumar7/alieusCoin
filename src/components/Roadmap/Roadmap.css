@@ -298,3 +298,24 @@
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 480px) {
+    .roadmap-section .section-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .roadmap-section .heading-text {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .section-description {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
