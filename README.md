@@ -219,26 +219,6 @@ netlify deploy --prod
 4. Set publish directory: `dist`
 5. Deploy!
 
-### Environment Variables (if needed)
-
-```env
-VITE_API_URL=your_api_url
-VITE_WHATSAPP_NUMBER=your_number
-```
-
----
-
-## 📸 Screenshots
-
-### Desktop View
-| Hero Section | Features |
-|--------------|----------|
-| ![Hero](./screenshots/hero.png) | ![Features](./screenshots/features.png) |
-
-### Mobile View
-| Navigation | Sections |
-|------------|----------|
-| ![Mobile Nav](./screenshots/mobile-nav.png) | ![Mobile](./screenshots/mobile.png) |
 
 ---
 
@@ -256,7 +236,7 @@ VITE_WHATSAPP_NUMBER=your_number
 
 ## 🔧 Customization
 
-
+### Adding New Sections
 
 1. Create a folder in `src/components/YourSection/`
 2. Add `YourSection.jsx` and `YourSection.css`
@@ -272,15 +252,29 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-<div align="center">
-
-### **Ritik Kumar**
-
-[![GitHub](https://img.shields.io/badge/GitHub-@ritik--kumar7-181717?style=for-the-badge&logo=github)](https://github.com/ritik-kumar7)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ritik_Kumar-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ritik-kumar)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Website-00f5ff?style=for-the-badge&logo=netlify)](https://my-portfolio-ritik.netlify.app)
-
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <h3>Ritik Kumar</h3>
+      <p>Full Stack Developer</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ritik-kumar7">
+        <img src="https://img.shields.io/badge/GitHub-ritik--kumar7-181717?style=for-the-badge&logo=github" alt="GitHub">
+      </a>
+      <br><br>
+      <a href="https://linkedin.com/in/ritik-kumar">
+        <img src="https://img.shields.io/badge/LinkedIn-Ritik_Kumar-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+      </a>
+      <br><br>
+      <a href="https://my-portfolio-ritik.netlify.app">
+        <img src="https://img.shields.io/badge/Portfolio-Visit_Website-00f5ff?style=for-the-badge&logo=netlify" alt="Portfolio">
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -294,8 +288,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-
-
-Made with 💜 by Ritik Kumar
-
+  <br>
+  <p>Made with 💜 by <strong>Ritik Kumar</strong></p>
+  <br>
 </div>
