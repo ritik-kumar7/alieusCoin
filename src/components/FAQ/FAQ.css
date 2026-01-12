@@ -1,0 +1,279 @@
+/* ============================================
+   🚀 FAQ - FUTURISTIC NEON THEME
+   ============================================ */
+
+.faq-section {
+    padding: 120px 0;
+    background:
+        radial-gradient(ellipse at 50% 20%, rgba(0, 245, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(191, 0, 255, 0.05) 0%, transparent 50%),
+        var(--bg-primary);
+    position: relative;
+}
+
+.faq-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-section .heading-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff 0%, var(--neon-cyan) 50%, var(--neon-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+}
+
+.faq-section .heading-text::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
+    border-radius: 2px;
+    box-shadow: 0 0 15px var(--neon-cyan);
+}
+
+/* Tab buttons */
+.tabs-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 245, 255, 0.15);
+    border-radius: 40px;
+    color: var(--text-secondary);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s var(--ease-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: -1;
+}
+
+.tab-btn:hover {
+    border-color: rgba(0, 245, 255, 0.4);
+    color: var(--text-primary);
+    box-shadow: 0 0 25px rgba(0, 245, 255, 0.2);
+}
+
+.tab-btn.active::before {
+    opacity: 1;
+}
+
+.tab-btn.active {
+    border-color: transparent;
+    color: var(--bg-primary);
+    font-weight: 700;
+    box-shadow:
+        0 0 30px rgba(0, 245, 255, 0.4),
+        0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Accordion */
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.accordion-item {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 245, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s var(--ease-smooth);
+    position: relative;
+}
+
+.accordion-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.accordion-item:hover::before {
+    opacity: 1;
+}
+
+.accordion-item:hover {
+    border-color: rgba(0, 245, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-item.active {
+    background: rgba(0, 245, 255, 0.03);
+    border-color: rgba(0, 245, 255, 0.3);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.2),
+        0 0 40px rgba(0, 245, 255, 0.1);
+}
+
+.accordion-item.active::before {
+    opacity: 1;
+}
+
+/* Accordion header */
+.accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.accordion-header:hover {
+    background: rgba(0, 245, 255, 0.02);
+}
+
+.accordion-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 245, 255, 0.15) 0%, rgba(191, 0, 255, 0.1) 100%);
+    border: 1px solid rgba(0, 245, 255, 0.2);
+    border-radius: 12px;
+    color: var(--neon-cyan);
+    transition: all 0.4s var(--ease-bounce);
+}
+
+.accordion-icon svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.4s var(--ease-bounce);
+}
+
+.accordion-item.active .accordion-icon {
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    border-color: transparent;
+    color: var(--bg-primary);
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.4);
+}
+
+.accordion-item.active .accordion-icon svg {
+    transform: rotate(180deg);
+}
+
+.accordion-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+/* Accordion body */
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-smooth), padding 0.4s var(--ease-smooth);
+}
+
+.accordion-item.active .accordion-body {
+    max-height: 400px;
+    padding: 0 28px 28px 86px;
+}
+
+.accordion-body p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 80px 0;
+    }
+
+    .faq-section .heading-text {
+        font-size: 2rem;
+    }
+
+    .tabs-list {
+        gap: 10px;
+    }
+
+    .tab-btn {
+        padding: 14px 24px;
+        font-size: 0.85rem;
+    }
+
+    .accordion-header {
+        padding: 20px 22px;
+    }
+
+    .accordion-icon {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .accordion-title {
+        font-size: 1rem;
+    }
+
+    .accordion-item.active .accordion-body {
+        padding: 0 22px 22px 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-btn {
+        padding: 12px 18px;
+        font-size: 0.8rem;
+    }
+
+    .accordion-item.active .accordion-body {
+        padding: 0 18px 20px 18px;
+    }
+}

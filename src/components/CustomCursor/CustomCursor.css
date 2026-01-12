@@ -1,0 +1,80 @@
+/* ============================================
+   🚀 CUSTOM CURSOR - FUTURISTIC NEON THEME
+   ============================================ */
+
+.cursor-main {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 100000;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background 0.3s;
+    mix-blend-mode: difference;
+    box-shadow:
+        0 0 15px var(--neon-cyan),
+        0 0 30px rgba(0, 245, 255, 0.5);
+}
+
+.cursor-trail {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--neon-cyan);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    transition: width 0.4s, height 0.4s, border-color 0.3s, opacity 0.3s;
+}
+
+/* Hover state */
+.cursor-main.hovering {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid var(--neon-purple);
+    mix-blend-mode: normal;
+    box-shadow:
+        0 0 20px var(--neon-purple),
+        0 0 40px rgba(191, 0, 255, 0.4);
+}
+
+.cursor-trail.hovering {
+    width: 80px;
+    height: 80px;
+    border-color: var(--neon-purple);
+    opacity: 0.3;
+}
+
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+    .cursor-main,
+    .cursor-trail {
+        display: none;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+
+    * {
+        cursor: auto !important;
+    }
+}
+
+/* Hide default cursor on desktop */
+@media (hover: hover) and (pointer: fine) {
+
+    body,
+    a,
+    button,
+    input,
+    textarea {
+        cursor: none !important;
+    }
+}
