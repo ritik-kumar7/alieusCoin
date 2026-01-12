@@ -1,4 +1,4 @@
-# 🚀 AHF Coin - Cryptocurrency Landing Page
+# 🚀 AHF Coin - Cryptocurrency Website
 
 <div align="center">
 
