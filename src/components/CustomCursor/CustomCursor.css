@@ -6,7 +6,7 @@
     position: fixed;
     width: 12px;
     height: 12px;
-    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    background: linear-gradient(135deg, #00f5ff, #bf00ff);
     border-radius: 50%;
     pointer-events: none;
     z-index: 100000;
@@ -14,7 +14,7 @@
     transition: width 0.3s, height 0.3s, background 0.3s;
     mix-blend-mode: difference;
     box-shadow:
-        0 0 15px var(--neon-cyan),
+        0 0 15px #00f5ff,
         0 0 30px rgba(0, 245, 255, 0.5);
 }
 
@@ -22,7 +22,7 @@
     position: fixed;
     width: 45px;
     height: 45px;
-    border: 2px solid var(--neon-cyan);
+    border: 2px solid #00f5ff;
     border-radius: 50%;
     pointer-events: none;
     z-index: 99999;
@@ -36,25 +36,57 @@
     width: 60px;
     height: 60px;
     background: transparent;
-    border: 2px solid var(--neon-purple);
+    border: 2px solid #bf00ff;
     mix-blend-mode: normal;
     box-shadow:
-        0 0 20px var(--neon-purple),
+        0 0 20px #bf00ff,
         0 0 40px rgba(191, 0, 255, 0.4);
 }
 
 .cursor-trail.hovering {
     width: 80px;
     height: 80px;
-    border-color: var(--neon-purple);
+    border-color: #bf00ff;
     opacity: 0.3;
+}
+
+/* ============================================
+   🔦 CARD SPOTLIGHT EFFECT
+   ============================================ */
+
+.card-spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Ensure card content stays above spotlight */
+.feature-card>*:not(.card-spotlight),
+.service-card>*:not(.card-spotlight),
+.about-item>*:not(.card-spotlight),
+.distribution-item>*:not(.card-spotlight),
+.token-info-item>*:not(.card-spotlight),
+.roadmap-block>*:not(.card-spotlight),
+.accordion-item>*:not(.card-spotlight),
+.calculator-card>*:not(.card-spotlight),
+.ps-column>*:not(.card-spotlight) {
+    position: relative;
+    z-index: 2;
 }
 
 /* Hide on touch devices */
 @media (hover: none) and (pointer: coarse) {
 
     .cursor-main,
-    .cursor-trail {
+    .cursor-trail,
+    .card-spotlight {
         display: none;
     }
 

@@ -6,17 +6,16 @@ const CustomCursor = () => {
     const cursorTrailRef = useRef(null);
     const animationFrameRef = useRef(null);
 
-    // Scroll reveal animation - triggers earlier
+    // Scroll reveal animation
     useEffect(() => {
         const observerOptions = {
-            threshold: 0.15, // Trigger when 15% is visible
-            rootMargin: '0px 0px -20px 0px' // Trigger when element is 20px inside viewport
+            threshold: 0.15,
+            rootMargin: '0px 0px -20px 0px'
         };
 
         const revealCallback = (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    // Add reveal class immediately
                     entry.target.classList.add('revealed');
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0) translateX(0)';
@@ -26,29 +25,25 @@ const CustomCursor = () => {
 
         const observer = new IntersectionObserver(revealCallback, observerOptions);
 
-        // Small delay to ensure DOM is ready
         const timer = setTimeout(() => {
-            // Observe all cards and sections that should animate
             const animatedElements = document.querySelectorAll(`
-        .feature-card,
-        .service-card,
-        .about-item,
-        .distribution-item,
-        .token-info-item,
-        .roadmap-block,
-        .accordion-item,
-        .ps-column,
-        .whitepaper-content,
-        .section-header
-      `);
+                .feature-card,
+                .service-card,
+                .about-item,
+                .distribution-item,
+                .token-info-item,
+                .roadmap-block,
+                .accordion-item,
+                .ps-column,
+                .whitepaper-content,
+                .section-header
+            `);
 
             animatedElements.forEach((el, index) => {
-                // Check if already in viewport on page load
                 const rect = el.getBoundingClientRect();
                 const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
 
                 if (isInViewport) {
-                    // Already visible, animate immediately with slight delay
                     el.style.opacity = '0';
                     el.style.transform = 'translateY(30px)';
                     el.style.transition = `all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${index * 0.05}s`;
@@ -58,7 +53,6 @@ const CustomCursor = () => {
                         el.style.transform = 'translateY(0)';
                     });
                 } else {
-                    // Not in viewport, set initial state and observe
                     el.style.opacity = '0';
                     el.style.transform = 'translateY(30px)';
                     el.style.transition = `all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)`;
@@ -70,6 +64,61 @@ const CustomCursor = () => {
         return () => {
             clearTimeout(timer);
             observer.disconnect();
+        };
+    }, []);
+
+    // Spotlight glow effect on cards
+    useEffect(() => {
+        const setupSpotlightEffect = () => {
+            const cards = document.querySelectorAll(`
+                .feature-card,
+                .service-card,
+                .about-item,
+                .distribution-item,
+                .token-info-item,
+                .roadmap-block,
+                .accordion-item,
+                .calculator-card,
+                .ps-column
+            `);
+
+            cards.forEach((card) => {
+                // Create spotlight overlay
+                const spotlight = document.createElement('div');
+                spotlight.className = 'card-spotlight';
+                card.style.position = 'relative';
+                card.appendChild(spotlight);
+
+                const handleMouseMove = (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    spotlight.style.opacity = '1';
+                    spotlight.style.background = `
+                        radial-gradient(
+                            600px circle at ${x}px ${y}px,
+                            rgba(0, 245, 255, 0.15),
+                            rgba(191, 0, 255, 0.08) 40%,
+                            transparent 60%
+                        )
+                    `;
+                };
+
+                const handleMouseLeave = () => {
+                    spotlight.style.opacity = '0';
+                };
+
+                card.addEventListener('mousemove', handleMouseMove);
+                card.addEventListener('mouseleave', handleMouseLeave);
+            });
+        };
+
+        // Setup after DOM is ready
+        const timer = setTimeout(setupSpotlightEffect, 400);
+
+        return () => {
+            clearTimeout(timer);
         };
     }, []);
 
@@ -117,7 +166,6 @@ const CustomCursor = () => {
         document.addEventListener('mousemove', handleMouseMove);
         animateTrail();
 
-        // Re-attach hover listeners after a slight delay to catch all elements
         const attachHoverListeners = () => {
             const interactiveElements = document.querySelectorAll(
                 'a, button, input, textarea, .feature-card, .service-card, .about-item, .distribution-item, .token-info-item, .roadmap-block, .accordion-item, .logo-wrap, .social-links a, .ps-item, [data-cursor-hover]'
@@ -149,7 +197,6 @@ const CustomCursor = () => {
             });
         };
 
-        // Attach after DOM is ready
         setTimeout(attachHoverListeners, 300);
 
         return () => {
