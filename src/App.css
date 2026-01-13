@@ -2,31 +2,25 @@
    🏆 GLOBAL APP STYLES - LUXURY GOLD THEME
    ============================================ */
 
-/* Page Wrapper with animated background */
+/* Page Wrapper with deep dark background */
 .page-wrapper {
   min-height: 100vh;
   position: relative;
-  background:
-    radial-gradient(ellipse at 0% 0%, rgba(201, 162, 39, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 100% 100%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(184, 134, 11, 0.03) 0%, transparent 60%),
-    linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
+  background: var(--bg-primary);
   background-attachment: fixed;
   overflow-x: hidden;
 }
 
-/* Animated gradient orbs */
+/* Subtle dark texture overlay */
 .page-wrapper::before {
   content: '';
   position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background:
-    radial-gradient(circle at 20% 80%, rgba(201, 162, 39, 0.08) 0%, transparent 30%),
-    radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 30%);
-  animation: orbFloat 25s ease-in-out infinite;
+    radial-gradient(ellipse at 50% 0%, rgba(20, 20, 20, 0.4) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -51,7 +45,7 @@
   }
 }
 
-/* Subtle grid pattern overlay */
+/* Subtle noise/grain texture overlay for depth */
 .page-wrapper::after {
   content: '';
   position: fixed;
@@ -59,10 +53,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image:
-    linear-gradient(rgba(201, 162, 39, 0.01) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 162, 39, 0.01) 1px, transparent 1px);
-  background-size: 80px 80px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
   pointer-events: none;
   z-index: 0;
 }

@@ -4,10 +4,7 @@
 
 .problem-solution-section {
     padding: 120px 0;
-    background:
-        radial-gradient(ellipse at 20% 50%, rgba(239, 68, 68, 0.04) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 50%, rgba(201, 162, 39, 0.04) 0%, transparent 50%),
-        var(--bg-primary);
+    background: var(--bg-primary);
     position: relative;
 }
 
