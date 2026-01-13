@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import heroImage from '../../assets/images/hero.webp';
+import heroImage from '../../assets/images/newImages/card-3.jpeg';
 import bgPattern from '../../assets/images/shapes/shape_net_ico_hero_section_bg.svg';
 import shapeGlobe from '../../assets/images/shape_globe.webp';
 import shapeCoin from '../../assets/images/shape_coin.webp';

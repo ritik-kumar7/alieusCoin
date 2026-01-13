@@ -16,6 +16,7 @@ import Whitepaper from './components/Whitepaper/Whitepaper';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import ChatWidget from './components/ChatWidget/ChatWidget';
+import AIChatBot from './components/AIChatBot/AIChatBot';
 import BackToTop from './components/BackToTop/BackToTop';
 import CustomCursor from './components/CustomCursor/CustomCursor';
 
@@ -30,6 +31,7 @@ const MainLayout = () => {
       <Outlet />
       <Footer />
       <ChatWidget />
+      <AIChatBot />
       <BackToTop />
     </div>
   );

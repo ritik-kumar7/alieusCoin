@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
-import aboutImage from '../../assets/images/about/about_image-min.webp';
+import aboutImage from '../../assets/images/newImages/card 2.jpeg';
+import videoCard from '../../assets/images/newImages/video-card.mp4';
 
 const About = () => {
     const aboutItems = [
@@ -26,6 +27,8 @@ const About = () => {
                         <div className="section-header">
                             <h2 className="heading-text">Introducing AHF</h2>
                         </div>
+
+
 
                         <ul className="about-list">
                             {aboutItems.map((item, index) => (
@@ -53,7 +56,21 @@ const About = () => {
                                 <div className="ripple ripple-4"></div>
                             </div>
                             <div className="coin-image">
-                                <img src={aboutImage} alt="About AHF" />
+                                {/* Video Card Section */}
+                                <div className="video-card-wrapper" data-aos="fade-up">
+                                    <div className="video-card">
+                                        <video
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                            className="intro-video"
+                                        >
+                                            <source src={videoCard} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 /* ============================================
-   🚀 BACK TO TOP - FUTURISTIC NEON THEME
+   🏆 BACK TO TOP - LUXURY BLACK & GOLD THEME
    ============================================ */
 
 .back-to-top {
@@ -8,7 +8,7 @@
     left: 35px;
     width: 55px;
     height: 55px;
-    background: linear-gradient(135deg, #00f5ff 0%, #bf00ff 100%);
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -16,8 +16,8 @@
     align-items: center;
     justify-content: center;
     box-shadow:
-        0 8px 30px rgba(0, 245, 255, 0.4),
-        0 0 40px rgba(191, 0, 255, 0.2);
+        0 8px 30px rgba(201, 162, 39, 0.4),
+        0 0 40px rgba(212, 175, 55, 0.2);
     z-index: 9997;
     opacity: 0;
     visibility: hidden;
@@ -34,7 +34,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #bf00ff 0%, #00f5ff 100%);
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
     opacity: 0;
     transition: opacity 0.4s;
     border-radius: 16px;
@@ -71,8 +71,8 @@
 .back-to-top.visible:hover {
     transform: translateY(-8px) rotate(5deg) scale(1.1);
     box-shadow:
-        0 15px 40px rgba(0, 245, 255, 0.5),
-        0 0 60px rgba(191, 0, 255, 0.3);
+        0 15px 40px rgba(201, 162, 39, 0.5),
+        0 0 60px rgba(212, 175, 55, 0.3);
 }
 
 .back-to-top:active {
@@ -82,7 +82,7 @@
 .back-to-top svg {
     width: 26px;
     height: 26px;
-    fill: #050510;
+    fill: var(--bg-primary);
     position: relative;
     z-index: 2;
     animation: arrowBounce 2s ease-in-out infinite;

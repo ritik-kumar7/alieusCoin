@@ -1,5 +1,5 @@
 /* ============================================
-   🚀 PARTNERS - FUTURISTIC NEON THEME
+   🏆 PARTNERS - LUXURY BLACK & GOLD THEME
    ============================================ */
 
 .partners-section {
@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
+    background: linear-gradient(90deg, transparent, var(--gold-primary), var(--gold-light), transparent);
     opacity: 0.5;
 }
 
@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--neon-purple), var(--neon-cyan), transparent);
+    background: linear-gradient(90deg, transparent, var(--gold-light), var(--gold-primary), transparent);
     opacity: 0.5;
 }
 
@@ -53,10 +53,10 @@
 .dot-right {
     width: 12px;
     height: 12px;
-    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
     border-radius: 50%;
     animation: dotPulse 2s ease-in-out infinite;
-    box-shadow: 0 0 15px var(--neon-cyan);
+    box-shadow: 0 0 15px var(--gold-primary);
 }
 
 .dot-right {
@@ -69,25 +69,25 @@
     100% {
         transform: scale(1);
         opacity: 1;
-        box-shadow: 0 0 15px var(--neon-cyan);
+        box-shadow: 0 0 15px var(--gold-primary);
     }
 
     50% {
         transform: scale(1.3);
         opacity: 0.7;
-        box-shadow: 0 0 25px var(--neon-purple);
+        box-shadow: 0 0 25px var(--gold-light);
     }
 }
 
 .highlight-title {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 0;
-    background: linear-gradient(90deg, var(--neon-cyan), #fff, var(--neon-purple));
+    background: linear-gradient(90deg, var(--gold-primary), var(--text-primary), var(--gold-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -129,7 +129,7 @@
     position: relative;
 }
 
-/* Logo container with neon border */
+/* Logo container with gold border */
 .logo-wrap {
     display: flex;
     align-items: center;
@@ -137,9 +137,9 @@
     min-width: 220px;
     min-height: 90px;
     padding: 30px 45px;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 245, 255, 0.15);
+    border: 1px solid rgba(201, 162, 39, 0.15);
     border-radius: 16px;
     transition: all 0.5s var(--ease-premium);
     position: relative;
@@ -151,7 +151,7 @@
     content: '';
     position: absolute;
     inset: -2px;
-    background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple), var(--neon-emerald), var(--neon-cyan));
+    background: linear-gradient(45deg, var(--gold-primary), var(--gold-light), var(--gold-champagne), var(--gold-primary));
     background-size: 300% 300%;
     border-radius: 18px;
     z-index: -1;
@@ -191,7 +191,7 @@
     transform: translateY(-8px) scale(1.05);
     box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.3),
-        0 0 30px rgba(0, 245, 255, 0.2);
+        0 0 30px rgba(201, 162, 39, 0.2);
 }
 
 /* Corner decorations */
@@ -199,7 +199,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    border: 2px solid var(--neon-cyan);
+    border: 2px solid var(--gold-primary);
     opacity: 0.5;
     transition: all 0.4s;
 }
@@ -234,7 +234,7 @@
 
 .logo-wrap:hover .corner {
     opacity: 1;
-    border-color: var(--neon-purple);
+    border-color: var(--gold-light);
 }
 
 /* Corner dots */
@@ -242,10 +242,10 @@
     position: absolute;
     width: 6px;
     height: 6px;
-    background: var(--neon-cyan);
+    background: var(--gold-primary);
     border-radius: 50%;
     transition: all 0.4s;
-    box-shadow: 0 0 10px var(--neon-cyan);
+    box-shadow: 0 0 10px var(--gold-primary);
 }
 
 .dot-1 {
@@ -269,8 +269,8 @@
 }
 
 .logo-wrap:hover .dot {
-    background: var(--neon-purple);
-    box-shadow: 0 0 15px var(--neon-purple);
+    background: var(--gold-light);
+    box-shadow: 0 0 15px var(--gold-light);
     animation: cornerDotPulse 0.8s ease-in-out infinite;
 }
 
@@ -315,7 +315,7 @@
 }
 
 .partner-name {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.6);
@@ -326,8 +326,8 @@
 }
 
 .logo-wrap:hover .partner-name {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 10px var(--neon-cyan);
+    color: var(--gold-primary);
+    text-shadow: 0 0 10px var(--gold-primary);
 }
 
 /* Responsive */

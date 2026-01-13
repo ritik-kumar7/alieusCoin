@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.css';
-import serviceImage from '../../assets/images/ico_service_image.webp';
+import serviceImage from '../../assets/images/newImages/card 2.jpeg';
 
 const Services = () => {
     const services = [

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Tokenomics.css';
-import tokenImage from '../../assets/images/shapes/ico_coins_image.webp';
+import tokenImage from '../../assets/images/newImages/card-1.jpeg';
 
 const Tokenomics = () => {
     const [isVisible, setIsVisible] = useState(false);

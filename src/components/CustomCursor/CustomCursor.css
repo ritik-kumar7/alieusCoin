@@ -1,12 +1,12 @@
 /* ============================================
-   🚀 CUSTOM CURSOR - FUTURISTIC NEON THEME
+   🏆 CUSTOM CURSOR - LUXURY BLACK & GOLD THEME
    ============================================ */
 
 .cursor-main {
     position: fixed;
     width: 12px;
     height: 12px;
-    background: linear-gradient(135deg, #00f5ff, #bf00ff);
+    background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
     border-radius: 50%;
     pointer-events: none;
     z-index: 100000;
@@ -14,15 +14,15 @@
     transition: width 0.3s, height 0.3s, background 0.3s;
     mix-blend-mode: difference;
     box-shadow:
-        0 0 15px #00f5ff,
-        0 0 30px rgba(0, 245, 255, 0.5);
+        0 0 15px var(--gold-primary),
+        0 0 30px rgba(201, 162, 39, 0.5);
 }
 
 .cursor-trail {
     position: fixed;
     width: 45px;
     height: 45px;
-    border: 2px solid #00f5ff;
+    border: 2px solid var(--gold-primary);
     border-radius: 50%;
     pointer-events: none;
     z-index: 99999;
@@ -36,17 +36,17 @@
     width: 60px;
     height: 60px;
     background: transparent;
-    border: 2px solid #bf00ff;
+    border: 2px solid var(--gold-light);
     mix-blend-mode: normal;
     box-shadow:
-        0 0 20px #bf00ff,
-        0 0 40px rgba(191, 0, 255, 0.4);
+        0 0 20px var(--gold-light),
+        0 0 40px rgba(212, 175, 55, 0.4);
 }
 
 .cursor-trail.hovering {
     width: 80px;
     height: 80px;
-    border-color: #bf00ff;
+    border-color: var(--gold-light);
     opacity: 0.3;
 }
 

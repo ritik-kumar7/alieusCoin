@@ -98,8 +98,8 @@ const CustomCursor = () => {
                     spotlight.style.background = `
                         radial-gradient(
                             600px circle at ${x}px ${y}px,
-                            rgba(0, 245, 255, 0.15),
-                            rgba(191, 0, 255, 0.08) 40%,
+                            rgba(201, 162, 39, 0.15),
+                            rgba(212, 175, 55, 0.08) 40%,
                             transparent 60%
                         )
                     `;

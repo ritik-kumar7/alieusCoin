@@ -1,5 +1,5 @@
 /* ============================================
-   🚀 HEADER - FUTURISTIC NEON THEME
+   🏆 HEADER - LUXURY BLACK & GOLD THEME
    ============================================ */
 
 .site-header {
@@ -15,13 +15,13 @@
 
 .site-header.scrolled {
   padding: 12px 0;
-  background: rgba(5, 5, 16, 0.85);
+  background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 245, 255, 0.1);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.1);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 245, 255, 0.05);
+    0 0 40px rgba(201, 162, 39, 0.05);
 }
 
 .nav-wrapper .container {
@@ -47,12 +47,12 @@
   height: 60px;
   width: auto;
   transition: all 0.4s var(--ease-premium);
-  filter: drop-shadow(0 0 10px rgba(0, 245, 255, 0.3));
+  filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.3));
 }
 
 .site-logo img:hover {
   transform: scale(1.08) rotate(-2deg);
-  filter: drop-shadow(0 0 20px rgba(0, 245, 255, 0.5));
+  filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.5));
 }
 
 /* Navigation Menu */
@@ -72,9 +72,9 @@
 .menu-list li a {
   display: block;
   padding: 12px 20px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(245, 240, 230, 0.7);
   text-decoration: none;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -87,8 +87,8 @@
 /* Active link styling */
 .menu-list li.active a,
 .menu-list li a.active {
-  color: #00f5ff;
-  text-shadow: 0 0 15px #00f5ff;
+  color: var(--gold-primary);
+  text-shadow: 0 0 15px var(--gold-primary);
 }
 
 .menu-list li.active a::before,
@@ -96,7 +96,7 @@
   width: 70%;
 }
 
-/* Neon underline effect */
+/* Gold underline effect */
 .menu-list li a::before {
   content: '';
   position: absolute;
@@ -104,10 +104,10 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #00f5ff, #bf00ff);
+  background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
   transform: translateX(-50%);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 10px #00f5ff;
+  box-shadow: 0 0 10px var(--gold-primary);
 }
 
 /* Glow background on hover */
@@ -118,7 +118,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(201, 162, 39, 0.1) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.4s;
 }
@@ -132,8 +132,8 @@
 }
 
 .menu-list li a:hover {
-  color: var(--neon-cyan);
-  text-shadow: 0 0 10px var(--neon-cyan);
+  color: var(--gold-primary);
+  text-shadow: 0 0 10px var(--gold-primary);
 }
 
 /* CTA Button */
@@ -148,10 +148,10 @@
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-purple) 100%);
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
   border-radius: 50px;
   color: var(--bg-primary);
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1px;
@@ -160,7 +160,7 @@
   transition: all 0.4s var(--ease-bounce);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+  box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
 }
 
 .get-started-btn::before {
@@ -181,8 +181,8 @@
 .get-started-btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow:
-    0 10px 30px rgba(0, 245, 255, 0.4),
-    0 0 40px rgba(191, 0, 255, 0.3);
+    0 10px 30px rgba(201, 162, 39, 0.4),
+    0 0 40px rgba(212, 175, 55, 0.3);
 }
 
 .get-started-btn .btn-icon svg {
@@ -199,8 +199,8 @@
 /* Mobile Menu Button */
 .mobile-menu-btn {
   display: none;
-  background: rgba(0, 245, 255, 0.1);
-  border: 1px solid rgba(0, 245, 255, 0.3);
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.3);
   border-radius: 12px;
   cursor: pointer;
   padding: 12px;
@@ -208,14 +208,14 @@
 }
 
 .mobile-menu-btn:hover {
-  background: rgba(0, 245, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+  background: rgba(201, 162, 39, 0.2);
+  box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
 }
 
 .mobile-menu-btn svg {
   width: 24px;
   height: 24px;
-  stroke: #00f5ff;
+  stroke: var(--gold-primary);
 }
 
 /* Hide close button on desktop */
@@ -231,14 +231,14 @@
     right: -100%;
     width: 320px;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(5, 5, 16, 0.98) 0%, rgba(15, 15, 35, 0.98) 100%);
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%);
     backdrop-filter: blur(30px);
     flex-direction: column;
     justify-content: flex-start;
     padding: 100px 30px 30px;
     transition: right 0.5s var(--ease-premium);
     box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(0, 245, 255, 0.1);
+    border-left: 1px solid rgba(201, 162, 39, 0.1);
   }
 
   .main-menu.active {
@@ -252,8 +252,8 @@
     right: 25px;
     width: 45px;
     height: 45px;
-    background: rgba(0, 245, 255, 0.1);
-    border: 1px solid rgba(0, 245, 255, 0.3);
+    background: rgba(201, 162, 39, 0.1);
+    border: 1px solid rgba(201, 162, 39, 0.3);
     border-radius: 12px;
     cursor: pointer;
     display: flex;
@@ -264,16 +264,16 @@
   }
 
   .mobile-close-btn:hover {
-    background: rgba(0, 245, 255, 0.2);
-    border-color: #00f5ff;
-    box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
+    background: rgba(201, 162, 39, 0.2);
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 25px rgba(201, 162, 39, 0.4);
     transform: rotate(90deg);
   }
 
   .mobile-close-btn svg {
     width: 22px;
     height: 22px;
-    stroke: #00f5ff;
+    stroke: var(--gold-primary);
   }
 
   .menu-list {
@@ -284,7 +284,7 @@
 
   .menu-list li a {
     padding: 18px 0;
-    border-bottom: 1px solid rgba(0, 245, 255, 0.1);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.1);
     width: 100%;
     font-size: 16px;
   }

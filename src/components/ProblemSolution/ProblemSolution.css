@@ -1,12 +1,12 @@
 /* ============================================
-   🚀 PROBLEM/SOLUTION - FUTURISTIC NEON THEME
+   🏆 PROBLEM/SOLUTION - LUXURY BLACK & GOLD THEME
    ============================================ */
 
 .problem-solution-section {
     padding: 120px 0;
     background:
         radial-gradient(ellipse at 20% 50%, rgba(239, 68, 68, 0.04) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 50%, rgba(34, 197, 94, 0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(201, 162, 39, 0.04) 0%, transparent 50%),
         var(--bg-primary);
     position: relative;
 }
@@ -23,12 +23,12 @@
 }
 
 .problem-solution-section .heading-text {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-    letter-spacing: 3px;
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #fff 0%, var(--neon-cyan) 50%, var(--neon-purple) 100%);
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--gold-primary) 50%, var(--gold-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -43,10 +43,10 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold-primary), var(--gold-light), transparent);
     border-radius: 2px;
-    box-shadow: 0 0 15px var(--neon-cyan);
+    box-shadow: 0 0 15px var(--gold-primary);
 }
 
 /* Table Grid */
@@ -122,21 +122,21 @@
 /* Solution Column */
 .solution-column {
     background:
-        linear-gradient(135deg, rgba(0, 255, 136, 0.06) 0%, rgba(0, 255, 136, 0.02) 100%);
+        linear-gradient(135deg, rgba(201, 162, 39, 0.08) 0%, rgba(201, 162, 39, 0.03) 100%);
     backdrop-filter: blur(15px);
-    border-color: rgba(0, 255, 136, 0.2);
+    border-color: rgba(201, 162, 39, 0.2);
 }
 
 .solution-column::before {
-    background: linear-gradient(90deg, transparent, var(--neon-emerald), #00cc6a, transparent);
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    background: linear-gradient(90deg, transparent, var(--gold-primary), var(--gold-light), transparent);
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
 }
 
 .solution-column:hover {
-    border-color: rgba(0, 255, 136, 0.4);
+    border-color: rgba(201, 162, 39, 0.4);
     box-shadow:
         0 30px 60px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 255, 136, 0.1);
+        0 0 40px rgba(201, 162, 39, 0.1);
 }
 
 /* Column Heading */
@@ -144,9 +144,9 @@
     display: flex;
     align-items: center;
     gap: 18px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 35px;
@@ -160,8 +160,8 @@
 }
 
 .solution-column .column-heading {
-    color: var(--neon-emerald);
-    text-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+    color: var(--gold-primary);
+    text-shadow: 0 0 20px rgba(201, 162, 39, 0.4);
 }
 
 /* Icon boxes */
@@ -182,9 +182,9 @@
 }
 
 .solution-column .column-heading .icon {
-    background: rgba(0, 255, 136, 0.15);
-    border: 1px solid rgba(0, 255, 136, 0.3);
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    background: rgba(201, 162, 39, 0.15);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.2);
 }
 
 .ps-column:hover .column-heading .icon {
@@ -246,9 +246,9 @@
 }
 
 .solution-column .check-icon {
-    background: rgba(0, 255, 136, 0.15);
-    border: 1px solid rgba(0, 255, 136, 0.3);
-    color: var(--neon-emerald);
+    background: rgba(201, 162, 39, 0.15);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    color: var(--gold-primary);
 }
 
 .ps-item:hover .check-icon {
@@ -260,7 +260,7 @@
 }
 
 .solution-column .ps-item:hover .check-icon {
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.4);
 }
 
 .check-icon svg {
@@ -276,7 +276,7 @@
 }
 
 .item-title {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -284,7 +284,7 @@
 }
 
 .item-description {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     color: var(--text-muted);
     line-height: 1.7;
