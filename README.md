@@ -1,15 +1,16 @@
-# 🚀 AHF Coin - Cryptocurrency Website
+# 🏆 AHF Coin - Cryptocurrency Website
 
 <div align="center">
 
-![AHF Coin](https://img.shields.io/badge/AHF-Cryptocurrency-00f5ff?style=for-the-badge&logo=bitcoin&logoColor=white)
+![AHF Coin](https://img.shields.io/badge/AHF-Cryptocurrency-c9a227?style=for-the-badge&logo=bitcoin&logoColor=white)
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Gemini_AI-2.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-**A futuristic, neon-themed cryptocurrency landing page built with React and Vite**
+**A luxury black & gold themed cryptocurrency landing page with AI-powered chatbot**
 
-[Live Demo](https://alieuscoin.netlify.app)
+[Live Demo](https://alieus-coin.netlify.app)
 
 </div>
 
@@ -20,10 +21,12 @@
 - [About The Project](#-about-the-project)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
+- [AI Chatbot](#-ai-chatbot)
 - [Getting Started](#-getting-started)
 - [Project Structure](#-project-structure)
+- [Environment Variables](#-environment-variables)
 - [Deployment](#-deployment)
-- [Screenshots](#-screenshots)
+- [Color Palette](#-color-palette)
 - [Author](#-author)
 - [License](#-license)
 
@@ -31,15 +34,16 @@
 
 ## 🎯 About The Project
 
-AHF Coin is a modern, visually stunning cryptocurrency landing page designed to showcase the next-generation decentralized digital currency. The project features a **futuristic Web3 aesthetic** with neon gradients, glassmorphism effects, smooth animations, and premium interactive elements.
+AHF Coin (Alieus 2.0) is the world's first hedge fund-backed cryptocurrency. This website showcases the token with a **luxury black & gold aesthetic**, featuring premium animations, glassmorphism effects, and an AI-powered chatbot assistant.
 
 ### 🎨 Design Philosophy
 
-- **Dark-mode Dominant UI** - Easy on the eyes with a premium feel
-- **Neon Color Palette** - Cyan (#00f5ff), Purple (#bf00ff), Emerald (#00ff88)
+- **Luxury Black & Gold Theme** - Premium feel with elegant gold accents
+- **Dark Mode UI** - Easy on the eyes with sophisticated design
+- **Gold Color Palette** - Primary (#c9a227), Light (#e6c14b), Champagne (#d4af37)
 - **Glassmorphism Effects** - Modern frosted glass card designs
 - **Micro-interactions** - Hover effects, scroll animations, and custom cursor
-- **Performance Optimized** - GPU-accelerated animations with smooth 60fps
+- **AI-Powered Assistant** - Gemini 2.5 Flash chatbot for user queries
 
 ---
 
@@ -53,12 +57,21 @@ AHF Coin is a modern, visually stunning cryptocurrency landing page designed to 
 - ✅ Roadmap timeline with animated milestones
 - ✅ FAQ accordion with smooth transitions
 - ✅ WhatsApp chat widget integration
+- ✅ **AI Chatbot** powered by Gemini 2.5 Flash
 - ✅ Back to top button with smooth scroll
 
+### 🤖 AI Chatbot Features
+- ✅ Real-time AI responses using Google Gemini 2.5 Flash
+- ✅ Context-aware about AHF cryptocurrency
+- ✅ Markdown formatting support (bold, italic)
+- ✅ Typing indicator animation
+- ✅ Beautiful gold-themed UI matching website design
+- ✅ Mobile responsive design
+
 ### 🎨 Visual Effects
-- ✅ Custom cursor with trail effect
+- ✅ Custom cursor with gold trail effect
 - ✅ Scroll-triggered reveal animations
-- ✅ Multi-layer neon glow hover effects
+- ✅ Gold spotlight glow on card hover
 - ✅ Gradient animated borders
 - ✅ Floating/parallax background elements
 - ✅ Inner glow and shimmer effects on cards
@@ -81,13 +94,33 @@ AHF Coin is a modern, visually stunning cryptocurrency landing page designed to 
 | ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | Frontend Framework |
 | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) | Build Tool & Dev Server |
 | ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white) | Client-side Routing |
+| ![Gemini AI](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=google&logoColor=white) | AI Chatbot (2.5 Flash) |
 | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | Styling & Animations |
 | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | Logic & Interactivity |
 
 ### 🔤 Fonts Used
-- **Orbitron** - Futuristic headings
-- **Rajdhani** - Navigation & labels
-- **Space Grotesk** - Body text
+- **Playfair Display** - Elegant serif headings
+- **Montserrat** - Modern navigation & body text
+
+---
+
+## 🤖 AI Chatbot
+
+The website includes an AI-powered chatbot assistant that uses **Google Gemini 2.5 Flash** model.
+
+### Features:
+- Real-time AI responses
+- Context-aware about AHF cryptocurrency, tokenomics, and blockchain
+- Markdown formatting (bold text, line breaks)
+- Beautiful gold-themed design
+- Side-by-side button layout on desktop, stacked on mobile
+
+### Setup:
+1. Get your API key from [Google AI Studio](https://ai.google.dev/)
+2. Add to `.env` file:
+   ```
+   VITE_API_KEY=your_gemini_api_key_here
+   ```
 
 ---
 
@@ -114,14 +147,20 @@ Make sure you have the following installed:
    yarn install
    ```
 
-3. **Start the development server**
+3. **Set up environment variables**
+   ```bash
+   # Create .env file
+   echo "VITE_API_KEY=your_gemini_api_key" > .env
+   ```
+
+4. **Start the development server**
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-4. **Open in browser**
+5. **Open in browser**
    ```
    http://localhost:5173
    ```
@@ -148,16 +187,14 @@ ahf-coin/
 │   ├── 📂 assets/              # Images, icons, fonts
 │   │   └── 📂 images/
 │   │       ├── 📂 logos/       # Icon SVGs
+│   │       ├── 📂 newImages/   # New card images & video
 │   │       └── *.webp          # Optimized images
 │   │
 │   ├── 📂 components/          # React components
 │   │   ├── 📂 Header/          # Navigation header
-│   │   │   ├── Header.jsx
-│   │   │   └── Header.css
-│   │   │
 │   │   ├── 📂 Hero/            # Hero section
 │   │   ├── 📂 Partners/        # Partners carousel
-│   │   ├── 📂 About/           # About section
+│   │   ├── 📂 About/           # About section with video
 │   │   ├── 📂 ProblemSolution/ # Problem & Solution
 │   │   ├── 📂 Features/        # Features + Calculator
 │   │   ├── 📂 Services/        # Services grid
@@ -168,6 +205,7 @@ ahf-coin/
 │   │   ├── 📂 Footer/          # Footer section
 │   │   ├── 📂 Login/           # Login page
 │   │   ├── 📂 ChatWidget/      # WhatsApp chat
+│   │   ├── 📂 AIChatBot/       # AI Chatbot (Gemini)
 │   │   ├── 📂 BackToTop/       # Scroll to top button
 │   │   └── 📂 CustomCursor/    # Custom cursor effects
 │   │
@@ -176,6 +214,7 @@ ahf-coin/
 │   ├── index.css               # Base styles & variables
 │   └── main.jsx                # React entry point
 │
+├── 📄 .env                     # Environment variables
 ├── 📄 index.html               # HTML template
 ├── 📄 vite.config.js           # Vite configuration
 ├── 📄 package.json             # Dependencies & scripts
@@ -183,6 +222,20 @@ ahf-coin/
 ├── 📄 _redirects               # SPA routing for Netlify
 └── 📄 README.md                # Project documentation
 ```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_API_KEY=your_gemini_api_key_here
+```
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_API_KEY` | Google Gemini API key for AI chatbot |
 
 ---
 
@@ -217,8 +270,8 @@ netlify deploy --prod
 2. Connect repository in Netlify dashboard
 3. Set build command: `npm run build`
 4. Set publish directory: `dist`
-5. Deploy!
-
+5. Add environment variable: `VITE_API_KEY`
+6. Deploy!
 
 ---
 
@@ -226,11 +279,14 @@ netlify deploy --prod
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| 🔵 Neon Cyan | `#00f5ff` | Primary accent, links, glows |
-| 🟣 Neon Purple | `#bf00ff` | Secondary accent, gradients |
-| 🟢 Neon Emerald | `#00ff88` | Success states, highlights |
-| ⚫ Dark Primary | `#050510` | Main background |
-| ⚫ Dark Secondary | `#0a0a1e` | Card backgrounds |
+| 🥇 Gold Primary | `#c9a227` | Primary accent, buttons, glows |
+| 🥇 Gold Light | `#e6c14b` | Highlights, gradients |
+| 🥇 Gold Champagne | `#d4af37` | Secondary accent |
+| 🥇 Gold Bronze | `#b8860b` | Tertiary accent |
+| 🥇 Gold Pale | `#f5e6c8` | Subtle backgrounds |
+| ⚫ Dark Primary | `#0a0a0a` | Main background |
+| ⚫ Dark Secondary | `#111111` | Card backgrounds |
+| 📝 Text Primary | `#f5f0e6` | Main text color |
 
 ---
 
@@ -241,6 +297,20 @@ netlify deploy --prod
 1. Create a folder in `src/components/YourSection/`
 2. Add `YourSection.jsx` and `YourSection.css`
 3. Import and add to `App.jsx`
+
+### Changing Theme Colors
+
+Edit the CSS variables in `src/index.css`:
+
+```css
+:root {
+    --gold-primary: #c9a227;
+    --gold-light: #e6c14b;
+    --gold-dark: #a68523;
+    --bg-primary: #0a0a0a;
+    --text-primary: #f5f0e6;
+}
+```
 
 ---
 
@@ -270,7 +340,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
       </a>
       <br><br>
       <a href="https://my-portfolio-ritik.netlify.app">
-        <img src="https://img.shields.io/badge/Portfolio-Visit_Website-00f5ff?style=for-the-badge&logo=netlify" alt="Portfolio">
+        <img src="https://img.shields.io/badge/Portfolio-Visit_Website-c9a227?style=for-the-badge&logo=netlify" alt="Portfolio">
       </a>
     </td>
   </tr>
@@ -280,7 +350,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [Google Fonts](https://fonts.google.com/) - Orbitron, Rajdhani, Space Grotesk
+- [Google Fonts](https://fonts.google.com/) - Playfair Display, Montserrat
+- [Google AI](https://ai.google.dev/) - Gemini 2.5 Flash API
 - [Vite](https://vitejs.dev/) - Next generation frontend tooling
 - [React](https://react.dev/) - The library for web and native user interfaces
 - [Netlify](https://netlify.com/) - Platform for web projects
@@ -289,6 +360,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <br>
-  <p>Made with 💜 by <strong>Ritik Kumar</strong></p>
+  <p>Made with 🏆 by <strong>Ritik Kumar</strong></p>
   <br>
 </div>
