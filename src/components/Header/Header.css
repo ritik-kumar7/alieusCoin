@@ -299,13 +299,18 @@
     justify-content: center;
   }
 
-  .get-started-btn .btn-label {
+  .get-started-btn .btn-icon {
     display: none;
   }
 
+  .get-started-btn .btn-label {
+    display: block;
+  }
+
   .get-started-btn {
-    padding: 14px;
-    border-radius: 50%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 11px;
   }
 }
 

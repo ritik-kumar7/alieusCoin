@@ -4,7 +4,7 @@
 
 .whitepaper-section {
     padding: 120px 0;
-    background: var(--bg-primary);
+    background: transparent;
     position: relative;
 }
 

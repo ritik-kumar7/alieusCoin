@@ -8,7 +8,7 @@
     align-items: center;
     position: relative;
     padding: 120px 0 60px;
-    background: var(--bg-primary);
+    background: transparent;
     overflow: hidden;
     z-index: 10;
 }

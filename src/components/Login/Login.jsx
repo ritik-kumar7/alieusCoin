@@ -5,10 +5,17 @@ import logo from '../../assets/images/ahf-logo.webp';
 import bgImage from '../../assets/images/login-background.png';
 import shapeGlobe from '../../assets/images/shape_globe.webp';
 import shapeCoin from '../../assets/images/shape_coin.webp';
+import CustomCursor from '../CustomCursor/CustomCursor';
 
 const Login = () => {
     return (
-        <section className="login-section" style={{ backgroundImage: `url(${bgImage})` }}>
+        <section className="login-section">
+            {/* Blurred background image */}
+            <div className="login-bg-blur" style={{ backgroundImage: `url(${bgImage})` }}></div>
+            {/* Dark overlay */}
+            <div className="login-bg-overlay"></div>
+
+            <CustomCursor />
             <div className="login-shapes">
                 <div className="shape-1">
                     <img src={shapeGlobe} alt="" />
@@ -89,3 +96,4 @@ const Login = () => {
 };
 
 export default Login;
+

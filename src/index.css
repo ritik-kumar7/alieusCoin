@@ -75,8 +75,62 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Deep black base with subtle warm undertone */
-  background: #020201;
+
+  /* Ultra Matte Dusty Leather Background - EXACT from a.html */
+  background-color: #161616;
+
+  /* Matte dusty leather layers */
+  background-image:
+    /* Soft dusty patches */
+    radial-gradient(circle at 65% 28%,
+      rgba(255, 255, 255, 0.08),
+      transparent 85%),
+    radial-gradient(circle at 10% 72%,
+      rgba(0, 0, 0, 0.9),
+      transparent 45%),
+
+    /* Uneven leather darkness */
+    radial-gradient(circle at 60% 45%,
+      rgba(120, 90, 60, 0.12),
+      transparent 90%),
+
+    /* Micro dust noise */
+    repeating-linear-gradient(0deg,
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55) 1px,
+      transparent 1px,
+      transparent 2px),
+
+    /* Fiber grain */
+    repeating-linear-gradient(90deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) 1px,
+      transparent 1px,
+      transparent 3px),
+
+    /* Random leather scratches */
+    repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px,
+      transparent 5px);
+
+  background-blend-mode:
+    soft-light,
+    multiply,
+    overlay,
+    normal,
+    multiply,
+    normal;
+
+  background-attachment: fixed;
+  background-size: cover;
+
+  /* Subtle matte vignette - reduced intensity */
+  box-shadow:
+    inset 0 0 200px rgba(0, 0, 0, 0.4),
+    inset 0 0 80px rgba(0, 0, 0, 0.3);
+
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
